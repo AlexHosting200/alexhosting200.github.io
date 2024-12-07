@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexHosting - Hébergement de Jeux, Web & VPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AlexHosting</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tarifs">Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Hébergez vos projets avec fiabilité et performance</h2>
+            <p>Des solutions pour vos besoins en jeux, web et serveurs VPS</p>
+            <button onclick="showAlert()">Commencez Maintenant</button>
+        </section>
+
+        <section id="services" class="container">
+            <h2>Nos Services</h2>
+            <div class="service">
+                <h3>Hébergement de Jeux</h3>
+                <p>Serveurs dédiés aux jeux pour une expérience fluide et sans lag.</p>
+            </div>
+            <div class="service">
+                <h3>Hébergement Web</h3>
+                <p>Des plans d'hébergement adaptés pour vos sites web.</p>
+            </div>
+            <div class="service">
+                <h3>VPS</h3>
+                <p>Des VPS puissants et flexibles pour tous vos projets.</p>
+            </div>
+        </section>
+
+        <section id="tarifs" class="container">
+            <h2>Tarifs</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <td>Hébergement de Jeux</td>
+                    <td>À partir de 10€/mois</td>
+                </tr>
+                <tr>
+                    <td>Hébergement Web</td>
+                    <td>À partir de 5€/mois</td>
+                </tr>
+                <tr>
+                    <td>VPS</td>
+                    <td>À partir de 20€/mois</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contactez-nous</h2>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AlexHosting. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
