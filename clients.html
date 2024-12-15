@@ -1,2 +1,881 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Espace client - AlexHosting</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://hebergtonserv.twic.pics/logohts.png">
+    <link rel="icon" type="image/x-icon" href="https://hebergtonserv.twic.pics/logohts.png">
+    <!-- Styling -->
+<link href="/store/assets/fonts/css/open-sans-family.css" rel="stylesheet" type="text/css" />
+<link href="/store/templates/twenty-one/css/all.min.css?v=290855" rel="stylesheet">
+<link href="/store/templates/twenty-one/css/theme.min.css?v=290855" rel="stylesheet">
+<link href="/store/assets/css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="/store/templates/clientx-child/css/slick.css" rel="stylesheet">
+  <link href="/store/templates/clientx-child/css/clientx.css" rel="stylesheet">
+  <link href="/store/templates/clientx-child/css/clientx_responsive.css" rel="stylesheet">
+<script>
+    var csrfToken = '730d1e1613cdeef3202d30eb5b39ee3a541c2293',
+        markdownGuide = 'Guide de mise en forme',
+        locale = 'en',
+        saved = 'enregistré',
+        saving = 'enregistrement automatique',
+        whmcsBaseUrl = "/store",
+        requiredText = 'Requis',
+        recaptchaSiteKey = "";
+</script>
+  <script>
+      var rtlSlickSlider = false;  
+  </script>
+<script src="/store/templates/twenty-one/js/scripts.min.js?v=290855"></script>
+<script src="/store/templates/clientx-child/js/slick-1.8.js"></script>
+<script src="/store/templates/clientx-child/js/clientx.js"></script>
+    
+</head>
+<body class="" data-phone-cc-input="1">
+    
+                                        <nav class="clientx header wgsheaderfromaddon navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+        <div class="navbar-header-cover-top">
+            <div class="navbar-header">
+                                            <div class="navbar-brand"> <a href="https://hebergtonserv.com/store/clientarea.php" class="logo" target="_self"><img src="https://hebergtonserv.twic.pics/logohts.png" alt="HebergTonServ" style="width: 90px;height: 50px;"></a> </div>
+                                </div>
+            <div class="collapse navbar-collapse top-menu-open-hov" id="bs-example-navbar-collapse-1">
+                                                            <ul class="nav navbar-nav navbar-right whmcs-default-navigation" id="wgs-top-bar-menu">
+                                <li menuItemName="Home" class="d-block no-collapse" id="Primary_Navbar-Home">
+        <a class="pr-4" href="/store/clientarea.php">
+                        Espace client
+                    </a>
+            </li>
+    <li menuItemName="Services" class="d-block dropdown no-collapse" id="Primary_Navbar-Services">
+        <a class="pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Mes services
+                    </a>
+                    <ul class="dropdown-menu">
+                                                <li menuItemName="My Services" class="dropdown-item" id="Primary_Navbar-Services-My_Services">
+                        <a href="/store/clientarea.php?action=services" class="dropdown-item px-2 py-0">
+                                                        Mes produits & services
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="firewallManager" class="dropdown-item" id="Primary_Navbar-Services-firewallManager">
+                        <a href="/store/index.php?m=firewall_manager" class="dropdown-item px-2 py-0">
+                            <i class="fas fa-shield-alt"></i>&nbsp;                            Firewall Manager
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Order New Services" class="dropdown-item" id="Primary_Navbar-Services-Order_New_Services">
+                        <a href="/store/cart.php" class="dropdown-item px-2 py-0">
+                                                        Commander un nouveau service
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="View Available Addons" class="dropdown-item" id="Primary_Navbar-Services-View_Available_Addons">
+                        <a href="/store/cart.php?gid=addons" class="dropdown-item px-2 py-0">
+                                                        Afficher les ajouts disponibles
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+    <li menuItemName="Domains" class="d-block dropdown no-collapse" id="Primary_Navbar-Domains">
+        <a class="pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Mes domaines
+                    </a>
+                    <ul class="dropdown-menu">
+                                                <li menuItemName="My Domains" class="dropdown-item" id="Primary_Navbar-Domains-My_Domains">
+                        <a href="/store/clientarea.php?action=domains" class="dropdown-item px-2 py-0">
+                                                        Mes noms de domaines
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Renew Domains" class="dropdown-item" id="Primary_Navbar-Domains-Renew_Domains">
+                        <a href="/store/cart/domain/renew" class="dropdown-item px-2 py-0">
+                                                        Renouveler un nom de domaine
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Register a New Domain" class="dropdown-item" id="Primary_Navbar-Domains-Register_a_New_Domain">
+                        <a href="/store/cart.php?a=add&domain=register" class="dropdown-item px-2 py-0">
+                                                        Enregistrer un nom de domaine
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Transfer a Domain to Us" class="dropdown-item" id="Primary_Navbar-Domains-Transfer_a_Domain_to_Us">
+                        <a href="/store/cart.php?a=add&domain=transfer" class="dropdown-item px-2 py-0">
+                                                        Transférer un nom de domaine
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Domain Search" class="dropdown-item" id="Primary_Navbar-Domains-Domain_Search">
+                        <a href="/store/domainchecker.php" class="dropdown-item px-2 py-0">
+                                                        Rechercher un nom de domaine
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+    <li menuItemName="Billing" class="d-block dropdown no-collapse" id="Primary_Navbar-Billing">
+        <a class="pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Mes factures
+                    </a>
+                    <ul class="dropdown-menu">
+                                                <li menuItemName="My Invoices" class="dropdown-item" id="Primary_Navbar-Billing-My_Invoices">
+                        <a href="/store/clientarea.php?action=invoices" class="dropdown-item px-2 py-0">
+                                                        Mes factures
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="My Quotes" class="dropdown-item" id="Primary_Navbar-Billing-My_Quotes">
+                        <a href="/store/clientarea.php?action=quotes" class="dropdown-item px-2 py-0">
+                                                        Mes devis
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Payment Methods" class="dropdown-item" id="Primary_Navbar-Billing-Payment_Methods">
+                        <a href="/store/account/paymentmethods" class="dropdown-item px-2 py-0">
+                                                        Mode de paiement
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Add Funds" class="dropdown-item" id="Primary_Navbar-Billing-Add_Funds">
+                        <a href="/store/clientarea.php?action=addfunds" class="dropdown-item px-2 py-0">
+                                                        Ajouter des fonds
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+    <li menuItemName="Support" class="d-block dropdown no-collapse" id="Primary_Navbar-Support">
+        <a class="pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Support
+                    </a>
+                    <ul class="dropdown-menu">
+                                                <li menuItemName="Tickets" class="dropdown-item" id="Primary_Navbar-Support-Tickets">
+                        <a href="/store/supporttickets.php" class="dropdown-item px-2 py-0">
+                                                        Mes demandes
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Announcements" class="dropdown-item" id="Primary_Navbar-Support-Announcements">
+                        <a href="/store/announcements" class="dropdown-item px-2 py-0">
+                                                        Actualités
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Knowledgebase" class="dropdown-item" id="Primary_Navbar-Support-Knowledgebase">
+                        <a href="/store/knowledgebase" class="dropdown-item px-2 py-0">
+                                                        Base de connaissances
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Downloads" class="dropdown-item" id="Primary_Navbar-Support-Downloads">
+                        <a href="/store/download" class="dropdown-item px-2 py-0">
+                                                        Téléchargements
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Network Status" class="dropdown-item" id="Primary_Navbar-Support-Network_Status">
+                        <a href="/store/serverstatus.php" class="dropdown-item px-2 py-0">
+                                                        État du réseau
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+    <li menuItemName="Open Ticket" class="d-block" id="Primary_Navbar-Open_Ticket">
+        <a class="pr-4" href="/store/submitticket.php">
+                        Ouvrir une demande
+                    </a>
+            </li>
+    <li menuItemName="Affiliates" class="d-block" id="Primary_Navbar-Affiliates">
+        <a class="pr-4" href="/store/affiliates.php">
+                        Affiliés
+                    </a>
+            </li>
+    <li class="d-none dropdown collapsable-dropdown">
+        <a class="dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plus
+        </a>
+        <ul class="collapsable-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenu">
+        </ul>
+    </li>
+                        </ul>
+                                                </div>
+            <ul class="ul-right-top">
+                                                                                        <li class="dropdown messages-menu lang"><a class="dropdown-toggle" data-toggle="modal" data-target="#modalChooseLanguage"> <i class="fas fa-language"></i></a></li>
+                                                                                                                                                                        <li class="dropdown messages-menu settings" onclick="wgsToggleSidebar(this, 'left-open-cart-sec');"> <a class="dropdown-toggle"> <i class="fas fa-shopping-cart "></i></a></li>
+                                                               
+                    <li class="dropdown messages-menu settings" onclick="wgsToggleSidebar(this, 'left-open-notification-sec');"> <a class="dropdown-toggle"> <i class="fas fa-bell"></i></a></li>
+                    <li class="dropdown messages-menu settings" onclick="wgsToggleSidebar(this, 'left-open-myaccount-sec');"> <a class="dropdown-toggle"> <i class="fas fa-user"></i></a></li>
+                            </ul>
+        </div>
+    </div>
+    <div class="top-resp">                  
+        <button type="button" id="sidebarCollapsenav" class="respos">
+            <span class="pull-right"><i class="fas fa-bars open"></i> <i class="fas fa-times close"></i></span>
+        </button>                    
+                    <button type="button" id="sidebarCollapsenavdefault" class="resposone">
+                <span class="pull-right"><i class="fas fa-bars open"></i> <i class="fas fa-times close"></i></span>
+            </button>
+        	
+    </div>
+</nav>                                        <div class="menu-cart-clientx">
+    <div class="menu-setting-content">
+        <div class="panel-setting-heading">			
+            <h4 class="panel-setting-title">0</h4>
+            <a href="javascript:void(0);" onclick="wgsToggleClose(this, 'left-open-cart-sec');" class="f-right"><i class="fal fa-times"></i></a>
+        </div>
+        <div id="spinner-cart-loading" class="w-hidden">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+        <div id="summary-content-dynmic-get"></div>	
+    </div>
+</div>                            <div class="menu-myaccount-clientx">
+    <div class="menu-myaccount-content">
+        <div class="panel-setting-heading">			
+        <h4 class="panel-setting-title">
+            <div class="avatar user-setting-icon" style="background-image: url('https://www.gravatar.com/avatar/0a3ecac87f5251c4f7b1496a98cab40f?s=80&d=mp&r=g')"></div>
+                max brounder&nbsp;
+            </h4>
+            <a href="javascript:void(0);" onclick="wgsToggleClose(this, 'left-open-myaccount-sec');" class="f-right"><i class="fal fa-times"></i></a>
+        </div>
+        <ul class="nav myaccount-sidenav">
+                <li menuItemName="Account" class="d-block no-collapse dropdown no-collapse account" id="Secondary_Navbar-Account">
+        <a class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Bonjour, max!
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                                                <li menuItemName="Edit Account Details" class="dropdown-item" id="Secondary_Navbar-Account-Edit_Account_Details">
+                        <a href="/store/clientarea.php?action=details" class="dropdown-item px-2 py-0">
+                                                        Mes informations
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="User Management" class="dropdown-item" id="Secondary_Navbar-Account-User_Management">
+                        <a href="/store/account/users" class="dropdown-item px-2 py-0">
+                                                        Gestion des utilisateurs
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Payment Methods" class="dropdown-item" id="Secondary_Navbar-Account-Payment_Methods">
+                        <a href="/store/account/paymentmethods" class="dropdown-item px-2 py-0">
+                                                        Mode de paiement
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Contacts" class="dropdown-item" id="Secondary_Navbar-Account-Contacts">
+                        <a href="/store/account/contacts" class="dropdown-item px-2 py-0">
+                                                        Contacts
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Email History" class="dropdown-item" id="Secondary_Navbar-Account-Email_History">
+                        <a href="/store/clientarea.php?action=emails" class="dropdown-item px-2 py-0">
+                                                        Courriels reçus
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Profile" class="dropdown-item" id="Secondary_Navbar-Account-Profile">
+                        <a href="/store/user/profile" class="dropdown-item px-2 py-0">
+                                                        Votre profil
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Change Password" class="dropdown-item" id="Secondary_Navbar-Account-Change_Password">
+                        <a href="/store/user/password" class="dropdown-item px-2 py-0">
+                                                        Modifier le mot de passe
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Security Settings" class="dropdown-item" id="Secondary_Navbar-Account-Security_Settings">
+                        <a href="/store/user/security" class="dropdown-item px-2 py-0">
+                                                        Paramètres de sécurité
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Logout" class="dropdown-item" id="Secondary_Navbar-Account-Logout">
+                        <a href="/store/logout.php" class="dropdown-item px-2 py-0">
+                                                        Quitter
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+        </ul>
+    </div>
+</div>            <div class="menu-notification-clientx">
+    <div class="menu-setting-content">
+        <div class="panel-setting-heading">			
+        <h4 class="panel-setting-title">
+                         0 &nbsp; Nouvelles notifications
+            </h4>
+            <a href="javascript:void(0);" onclick="wgsToggleClose(this, 'left-open-notification-sec');" class="f-right"><i class="fal fa-times"></i></a>
+        </div>              
+        <div class="notifi-content">
+                            <div class="notifi-details">
+                <p>Vous n'avez pas de notification</p>
+                </div>
+                    </div>
+    </div>
+</div>            <div class="menu-settings-clientx">
+    <div class="menu-settings-content">
+        <div class="panel-setting-heading">			
+        <h4 class="panel-setting-title">
+            Gérer le style du tableau de bord
+        </h4>
+            <a href="javascript:void(0);" onclick="wgsToggleClose(this, 'left-open-setting-sec');" class="f-right"><i class="fal fa-times"></i></a>
+        </div>
+        <div class="panel-setting-sidconetnt">								
+            <div class="setting-details-row">
+                <h5></h5>
+                <div class="screenshot-sec" onclick="wgsSetHomepageStyle(this,'0');">
+                    <img src="/store/templates/clientx-child/images/dash-scr2.png" alt="dashboard default"
+                                                                        class="active"
+                                                                >
+                </div>
+            </div>
+            <div class="setting-details-row">
+                <h5></h5>
+                <div class="screenshot-sec" onclick="wgsSetHomepageStyle(this,'1');">
+                    <img src="/store/templates/clientx-child/images/dash-scr1.png" alt="dashboard latest" 
+                                                                                    >
+                </div>
+            </div>
+            <div class="setting-details-row">
+                <h5></h5>
+                <div class="screenshot-sec" onclick="wgsSetHomepageStyle(this,'2');">
+                    <img src="/store/templates/clientx-child/images/dash-scr3.png" alt="dashboard whmcs default" 
+                                                                                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                            <div class="defaultClientxSidebar">
+    <div class="defaultClientxSidebar-content">
+        <div class="panel-setting-heading">			
+        <h4 class="panel-setting-title">Bienvenue à nouveau, max</h4>
+            <a href="javascript:void(0);" class="defaulttitle-close f-right"><i class="fal fa-times"></i></a>
+        </div>
+        <div class="menu-setting-content">
+            <div menuItemName="Client-Balance" class="card card-sidebar">
+        <div class="card-header">
+            <h3 class="card-title m-0">
+                <i class="fas fa-balance-scale"></i>&nbsp;                Crédit disponible
+                                <i class="fas fa-chevron-up card-minimise float-right"></i>
+            </h3>
+        </div>
+        <div class="collapsable-card-body">
+                                        <div class="list-group list-group-flush d-md-flex" role="tablist">
+                                                                        <a menuItemName="balance-amount"
+                               href="/store/clientarea.php?action=addfunds"
+                               class="list-group-item list-group-item-action"
+                                                                                                                                                               id="Primary_Sidebar-Client-Balance-balance-amount"
+                            >
+                                <div class="sidebar-menu-item-wrapper">
+                                                                        <div class="sidebar-menu-item-label">
+                                        <h3 style="text-align:center;">€0.00  EUR</h3>
+                                    </div>
+                                                                    </div>
+                            </a>
+                                                            </div>
+                    </div>
+                    <div class="card-footer clearfix">
+                <a href="clientarea.php?action=addfunds" class="btn btn-success btn-sm btn-block">
+            <i class="fa fa-plus"></i> Ajouter des fonds
+        </a>
+            </div>
+            </div>
+        <div menuItemName="Client Details" class="card card-sidebar">
+        <div class="card-header">
+            <h3 class="card-title m-0">
+                <i class="fas fa-user"></i>&nbsp;                Vos informations
+                                <i class="fas fa-chevron-up card-minimise float-right"></i>
+            </h3>
+        </div>
+        <div class="collapsable-card-body">
+                            <div class="card-body">
+                    <strong>max brounder</strong><br>25 loubatase<br>14 passage<br>loubatase, Aube, 3860<br>France
+                </div>
+                                </div>
+                    <div class="card-footer clearfix">
+                    <a href="clientarea.php?action=details" class="btn btn-success btn-sm btn-block">
+        <i class="fas fa-pencil-alt"></i> Mettre à jour
+    </a>
+            </div>
+            </div>
+                <div menuItemName="AndrezzzLinkSocialMedia" class="card card-sidebar">
+        <div class="card-header">
+            <h3 class="card-title m-0">
+                <i class="fas fa-link"></i>&nbsp;                Liens vers les réseaux sociaux
+                                <i class="fas fa-chevron-up card-minimise float-right"></i>
+            </h3>
+        </div>
+        <div class="collapsable-card-body">
+                                        <div class="list-group list-group-flush d-md-flex" role="tablist">
+                                                                        <div menuItemName="Discord" class="list-group-item list-group-item-action" id="Secondary_Sidebar-AndrezzzLinkSocialMedia-Discord">
+                                                                <i class="fab fa-discord"></i>&nbsp;                                Discord<span class="label pull-right float-right bg-color-purple" style="cursor: pointer;" onclick="window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=918462993430347827&redirect_uri=https%3A%2F%2Fhebergtonserv.com%2Fstore%2Fmodules%2Faddons%2FAndrezzzLinkDiscord%2Fpublic.php&response_type=code&scope=identify+guilds.join'">Lien</span>
+                            </div>
+                                                            </div>
+                    </div>
+            </div>
+    	
+        </div>
+    </div>
+    <button type="button" id="sidebarCollapse-left" class="shift-btn" onclick="wgsToggleSidebarDefault(this, 'sidebar-default');"> </button>
+</div>                <section id="main-body">
+			                                    <nav id="sidebar" class=" active leftSideBarClosed mob-nav wgssidebaraddon wgsdoublMenu  user-is-loggedin ">
+        <ul class="list-unstyled components wgssidefontcoloraddon ">
+                    <li class="wgsDataCst"><a href="https://hebergtonserv.com/store/clientarea.php"   class="active" data-toggle="tooltip" data-placement="top" title="" data-original-title="Accueil"> <i class="fa fa-home"></i><span>Accueil</span></a>
+                                    </li>
+                    <li class="wgsDataCst"><a href="cart.php"   class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Passer une commande"> <i class="fa fa-shopping-cart"></i><span>Passer une commande</span></a>
+                                    </li>
+                    <li class="wgsDataCst"><a href="javascript:void(0);"   onclick="toggleTab(this);"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes services"> <i class="fa fa-cogs"></i><span>Mes services</span></a>
+                                            <ul style="display:none;" class="sidebar_items custom_sidebar_items">
+                                                    <li class="wgsDataCst"> <a href="clientarea.php?action=products"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes services"><i class="fa fa-cogs"></i><span>Mes services</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="cart.php?gid=addons"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Afficher les ajouts disponibles"><i class="fa fa-plus-square"></i><span>Afficher les ajouts disponibles</span></a> </li>
+                                            </ul>
+                            </li>
+                    <li class="wgsDataCst"><a href="clientarea.php?action=details"   class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes informations"> <i class="fa fa-user"></i><span>Mes informations</span></a>
+                                    </li>
+                    <li class="wgsDataCst"><a href="javascript:void(0);"   onclick="toggleTab(this);"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes domaines"> <i class="fa fa-globe"></i><span>Mes domaines</span></a>
+                                            <ul style="display:none;" class="sidebar_items custom_sidebar_items">
+                                                    <li class="wgsDataCst"> <a href="clientarea.php?action=domains"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Nom de domaines"><i class="fa fa-globe"></i><span>Nom de domaines</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="cart.php?a=add&domain=register"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Enregistrer un nom de domaine"><i class="fa fa-registered"></i><span>Enregistrer un nom de domaine</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="cart.php?a=add&domain=transfer"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Transférer un nom de domaine"><i class="fa fa-exchange"></i><span>Transférer un nom de domaine</span></a> </li>
+                                            </ul>
+                            </li>
+                    <li class="wgsDataCst"><a href="javascript:void(0);"   onclick="toggleTab(this);"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Support"> <i class="fa fa-life-ring"></i><span>Support</span></a>
+                                            <ul style="display:none;" class="sidebar_items custom_sidebar_items">
+                                                    <li class="wgsDataCst"> <a href="supporttickets.php"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes demandes"><i class="fas fa-thumbs-up"></i><span>Mes demandes</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="contact.php"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Contactez-nous"><i class="fa fa-envelope"></i><span>Contactez-nous</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="index.php?rp=/announcements"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Actualités"><i class="fa fa-bullhorn"></i><span>Actualités</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="index.php?rp=/knowledgebase"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Base de connaissances"><i class="fa fa-book"></i><span>Base de connaissances</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="downloads.php"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Téléchargements"><i class="fa fa-download"></i><span>Téléchargements</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="serverstatus.php"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="État du réseau"><i class="fa fa-wifi"></i><span>État du réseau</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="affiliates.php"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Affiliés"><i class="fas fa-handshake"></i><span>Affiliés</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="submitticket.php"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ouvrir une demande"><i class="fa fa-comments"></i><span>Ouvrir une demande</span></a> </li>
+                                            </ul>
+                            </li>
+                    <li class="wgsDataCst"><a href="javascript:void(0);"   onclick="toggleTab(this);"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes factures"> <i class="fa fa-university"></i><span>Mes factures</span></a>
+                                            <ul style="display:none;" class="sidebar_items custom_sidebar_items">
+                                                    <li class="wgsDataCst"> <a href="clientarea.php?action=invoices"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes factures"><i class="fas fa-credit-card"></i><span>Mes factures</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="clientarea.php?action=quotes"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mes devis"><i class="fas fa-hand-holding-usd"></i><span>Mes devis</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="clientarea.php?action=masspay&all=true"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Paiement en masse"><i class="fas fa-money-check-alt"></i><span>Paiement en masse</span></a> </li>
+                                                    <li class="wgsDataCst"> <a href="clientarea.php?action=addfunds"  class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ajouter des fonds"><i class="fa fa-money-bill"></i><span>Ajouter des fonds</span></a> </li>
+                                            </ul>
+                            </li>
+                    <li class="wgsDataCst"><a href="logout.php"   class="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Se déconnecter"> <i class="fa fa-sign-out"></i><span>Se déconnecter</span></a>
+                                    </li>
+            </ul>
+    <button type="button" id="sidebarCollapse" class="shift-btn  active leftSideBarClosed"> </button>
+</nav>                                        <div class="wrapper">
+                <div id="content"class="  active leftSideBarClosed ">
+                <div class="theme-main-inner-page-section">
+                                                            <div class="verification-banner email-verification-wgs">
+            <div class="col-md-12">
+                <div class="alert alert-info remid" role="alert"><strong><i class="fas fa-exclamation-triangle "></i></strong> Merci de vérifier votre boîte courriel et d'ouvrir le courriel correspondant pour vérifier votre courriel. <button type="button" class="btn close" id="btnEmailVerificationClose" data-uri="/store/dismiss/email-verification"><span aria-hidden="true">&times;</span></button> <button id="btnResendVerificationEmail" class="btn btn-resend-verify-email btn-save btn-action wgs_custom-btn" data-email-sent="Courriel envoyé" data-error-msg="Erreur" data-uri="/store/user/verification/resend"><span class="loader w-hidden"><i class="fa fa-spinner fa-spin"></i></span> Renvoyer le courriel de vérification</button></div>
+            </div>
+        </div>
+                                    
+    
+
+            <div class="them-default-home-page bg-white">
+        <section class="default-home-page-tiles">
+        <div class="row">
+            <div class="col-md-3" onclick="window.location = 'clientarea.php?action=services'">
+                <div class="hosting-panal"> <span class="host-user">0</span>
+                    <div class="panel-icon"><img src="/store/templates/clientx-child/images/host-icone.png" alt="#"></div>
+                    <h2>Hébergement actif</h2>
+                    <p>Consultez le nombre total de vos produits actuellement actifs.</p>
+                </div>
+            </div>
+            <div class="col-md-3" onclick="window.location = 'supporttickets.php'">
+                <div class="hosting-panal tick"> <span class="host-user">0</span>
+                    <div class="panel-icon"><img src="/store/templates/clientx-child/images/ticket.png" alt="#"></div>
+                    <h2>Tickets actifs</h2>
+                    <p>Consultez rapidement l'état de tous vos tickets actifs.</p>
+                </div>
+            </div>
+            <div class="col-md-3" onclick="window.location = 'clientarea.php?action=invoices'">
+                <div class="hosting-panal invo"> <span class="host-user">0</span>
+                    <div class="panel-icon"><img src="/store/templates/clientx-child/images/due.png" alt="#"></div>
+                    <h2>Factures dues</h2>
+                    <p>Consultez vos reçus de paiement passés et en attente.</p>
+                </div>
+            </div>
+                            <div class="col-md-3" onclick="window.location = 'clientarea.php?action=domains'">
+                    <div class="hosting-panal regis"> <span class="host-user">0</span>
+                        <div class="panel-icon"><img src="/store/templates/clientx-child/images/reg.png" alt="#"></div>
+                        <h2>Domaines enregistrés</h2>
+                        <p>Consultez les détails de tous les domaines actifs et passés que vous avez achetés.</p>
+                    </div>
+                </div>
+                    </div>
+    </section>
+    <section class="default-home-active-product-service ">
+        
+                                    
+                            <div menuItemName="Active Products/Services" class="card card-accent-gold" id="servicesPanel">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">
+                                                            <div class="float-right">
+                                    <a href="clientarea.php?action=services" class="btn btn-default bg-color-gold btn-xs">
+                                        <i class="fas fa-arrow-right"></i>                                        Mes produits & services
+                                    </a>
+                                </div>
+                                                        <i class="fas fa-cube"></i>&nbsp;                            Vos produits/services actifs
+                                                    </h3>
+                    </div>
+                    <div class="row">
+                                                    <div class="col-md-12 html-section-home-page">
+                                <div class="card-body">
+                                    <p>Vous n'avez aucun produit/service. <a href="cart.php">Passer une commande</a>.</p>
+                                </div>
+                            </div>
+                                                                    </div>
+                </div>
+                    
+                                                                                                    </section>
+        <section class="home-page-last-panels-section">
+        <div class="home-page-cart-domain-part row">
+                            <div class="col-md-6">
+                    <div class="domain-section-home-page-search">
+                        <h3 class="heading-title-domain-home-search">Rechercher un nouveau domaine</h3>
+                        <form method="post" action="domainchecker.php">
+<input type="hidden" name="token" value="730d1e1613cdeef3202d30eb5b39ee3a541c2293" />
+                            <div class="domain-search-form-inner">
+                                <input type="text" class="form-control"  placeholder="Trouvez un nom de domaine!" id="domainname" name="domain" required="">
+                                <span class="search-button-section-home-domain">
+                                    <button type="submit"> <span class="fas fa-search"></span></button>
+                                </span> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                        <div class="col-md-6">
+                <div class="cart-section-count-home-page">
+                    <div class="left-section-home-cart">
+                        <h3 class="heading-title-cart-home">
+                                                            Vous avez 0 articles dans votre panier
+                                                    </h3>
+                        <div class="button-cart-home">
+                                                            <a href="/store/cart.php" class="btn-home-cart">Commander</a>
+                                                    </div>
+                    </div>
+                    <div class="right-section-home-cart">
+                        <img src="/store/templates/clientx-child/images/shopping-bkt.png" alt="Shopping Cart">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="home-page-default-panels-execute">
+        <div class="row panel-home-default-inner-section">
+            <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            
+                            <div menuItemName="Recent Support Tickets" class="card card-accent-blue" id="ticketsPanel">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">
+                                                            <div class="float-right">
+                                    <a href="submitticket.php" class="btn btn-default bg-color-blue btn-xs">
+                                        <i class="fas fa-plus"></i>                                        Ouvrir une demande
+                                    </a>
+                                </div>
+                                                        <i class="fas fa-comments"></i>&nbsp;                            Dernières demandes
+                                                    </h3>
+                    </div>
+                    <div class="row">
+                                                    <div class="col-md-12 html-section-home-page">
+                                <div class="card-body">
+                                    <p>Aucune demande. Si vous avez besoin d'aide, vous pouvez <a href="submitticket.php">ouvrir une demande</a>.</p>
+                                </div>
+                            </div>
+                                                                    </div>
+                </div>
+                    
+                                                                                                                    
+                            <div menuItemName="Recent News" class="card card-accent-asbestos" id="announcementsPanel">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">
+                                                            <div class="float-right">
+                                    <a href="/store/announcements" class="btn btn-default bg-color-asbestos btn-xs">
+                                        <i class="fas fa-arrow-right"></i>                                        Afficher tout
+                                    </a>
+                                </div>
+                                                        <i class="far fa-newspaper"></i>&nbsp;                            Actualités récentes
+                                                    </h3>
+                    </div>
+                    <div class="row">
+                                                                    </div>
+                </div>
+                    
+                                                </div>
+            <div class="col-md-6 col-lg-12 col-xl-6">
+                                                                                                
+                    
+                                                                                    </div>
+        </div>       
+    </section>
+</div>       
+
+
+    </div>
+    <div class="clearfix"></div>
+              
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <ul class="list-inline mb-7 text-center">
+                            <li class="list-inline-item">
+        <a class="btn btn-icon mb-1" href="https://discord.gg/hebergtonserv" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+    </li>
+                        <li class="list-inline-item">
+                            <a class="nav-link" href="/store/contact.php">
+                                Contactez-nous
+                            </a>
+                        </li>
+                                                    <li class="list-inline-item">
+                                <a class="nav-link" href="https://hebergtonserv.com/legals" target="_blank">Conditions d'utilisation</a>
+                            </li>
+                                            </ul>
+                    <p class="copyright mb-0">
+                        Copyright &copy; 2024 HebergTonServ. Tous droits réservés.
+                    </p>
+                </div>
+            </footer>
+                </div>
+    </div>
+</section>
+    <div id="fullpage-overlay" class="w-hidden">
+        <div class="outer-wrapper">
+            <div class="inner-wrapper">
+                <img src="/store/assets/img/overlay-spinner.svg" alt="">
+                <br>
+                <span class="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div id="growls" class="default"></div>
+    <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Fermer</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Chargement en cours...
+                </div>
+                <div class="modal-footer">
+                    <div class="float-left loader">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        Chargement en cours...
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary modal-submit">
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form method="get" action="/store/clientarea.php?">
+        <div class="modal modal-localisation" id="modalChooseLanguage" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                                                    <h5 class="h5 pt-5 pb-3">Choisir la langue</h5>
+                            <div class="row item-selector">
+                            <input type="hidden" name="language" value="french" />
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="arabic">
+                                            العربية
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="azerbaijani">
+                                            Azerbaijani
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="catalan">
+                                            Català
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="chinese">
+                                            中文
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="croatian">
+                                            Hrvatski
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="czech">
+                                            Čeština
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="danish">
+                                            Dansk
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="dutch">
+                                            Nederlands
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="english">
+                                            English
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="estonian">
+                                            Estonian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="farsi">
+                                            Persian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item active" data-value="french">
+                                            Français
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="german">
+                                            Deutsch
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="hebrew">
+                                            עברית
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="hungarian">
+                                            Magyar
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="italian">
+                                            Italiano
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="macedonian">
+                                            Macedonian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="norwegian">
+                                            Norwegian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="portuguese-br">
+                                            Português
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="portuguese-pt">
+                                            Português
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="romanian">
+                                            Română
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="russian">
+                                            Русский
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="spanish">
+                                            Español
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="swedish">
+                                            Svenska
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="turkish">
+                                            Türkçe
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="ukranian">
+                                            Українська
+                                        </a>
+                                    </div>
+                                                            </div>
+                                                                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn wgs_custom-btn">Appliquer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+        <form action="#" id="frmGeneratePassword">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h4 class="modal-title">
+                        Générer un mot de passe
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger w-hidden" id="generatePwLengthError">
+                        Veuillez entrer un nombre entre 8 et 64 pour la longueur du mot de passe
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwLength" class="col-sm-4 col-form-label">Longueur du mot de passe</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwOutput" class="col-sm-4 col-form-label">Mot de passe généré</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                Générer un nouveau mot de passe
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/store/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                Copier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        Copier dans le presse-papiers et insérer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8f27631a89c200d2","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.5","token":"43ced669969f47d2a374280ee1fbdbfc"}' crossorigin="anonymous"></script>
+</body>
+</html>
+
 
