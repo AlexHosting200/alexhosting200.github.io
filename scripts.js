@@ -1,8 +1,20 @@
-function showAlert() {
-    alert("Bienvenue sur AlexHosting ! Commencez votre aventure maintenant.");
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const options = {
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
 
-document.querySelector('form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Merci pour votre message, nous vous répondrons bientôt !');
+    const sections = document.querySelectorAll('section, .service, .pricing-plan, form');
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
+
